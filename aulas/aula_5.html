@@ -4,28 +4,57 @@
         <meta charset="UTF-8">
         <title>Basic layout - 1 column</title>
         <style>
+            .menu{
+                margin: 0px 20px;
+                border-radius: 2px;
+                padding: 10px;
+                background-color: rgb(223, 220, 220);
+                text-align: right;
+            }
+            /*
+            Define uma regra para as tags `a` contidas na clase ` menu` 
+            */
+            .menu a{
+                text-decoration: none;
+                border-radius: 50%;
+                padding: 0px 10px;
+            }
+            .menu a:hover{
+                background-color: cornsilk;
+            }
+            .container{
+                padding: 10px;
+                border: 1px solid darkcyan;
+            }
             .topo{
                 border: 1px solid darkblue;
+                text-align: center;
             }
             .conteudo{
                 border: 1px solid darkmagenta;
             }
             .rodape{
                 border: 1px solid darkolivegreen;
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="topo">
-                TOPO  
-                <div class="menu">Menu</div>          
+                <h1>TOPO</h1>  
+                <div class="menu">
+                    <a href="">login</a>
+                    <a href="">logout</a>
+                </div>          
             </div>
             <div class="conteudo">
-                CONTEUDO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero dicta iusto vel eos! Velit dignissimos iusto ratione impedit tempora corporis, tenetur perspiciatis delectus facere, error illo beatae quis natus!</p>
             </div>
             <div class="rodape">
-                RODAPE
+                <a href="">Developed by ME</a>
+                <a href="">site map</a>
+                <a href="">Something else</a>
             </div>
         </div>
     </body>
