@@ -1,0 +1,15 @@
+form {
+    display: grid;
+    grid-template-columns: max-content 200px;
+    gap: 10px;
+}
+
+label {
+    justify-self: right;
+}
+
+.content {
+    padding: 20px;
+    background-color: yellow;
+    max-width: max-content;
+}

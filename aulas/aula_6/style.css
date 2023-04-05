@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(59, 58, 58);
+}
+
+form {
+    display: grid;
+    grid-template-columns: min-content 200px;
+    gap: 10px;
+}
+label {
+    justify-self: right;
+}
+
+.submit {
+    grid-column: 2/3;
+    justify-self: left;
+}

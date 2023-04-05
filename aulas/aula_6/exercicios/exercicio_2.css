@@ -1,0 +1,16 @@
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 20px);
+    grid-auto-flow: row;
+}
+
+label {
+    justify-self: right;
+}
+
+.content {
+    padding: 20px;
+    background-color: yellow;
+    max-width: max-content;
+}
