@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <style>
+        body{display: flex;}
+        .myGrid{
+            display: grid;
+            grid-template-columns: repeat(5, max-content);
+            border: 1px solid black;
+            text-align: center;
+        }
+        .myGrid div{
+            padding: 5px;
+        }
+        .x{
+            color: rgba(0, 0, 0, 0.308);
+        }
+        .top{
+            grid-column: 1 / 6;
+            background-color: #98FF98;
+            font-weight: bold;
+        }
+        .botS{
+            grid-column: 1 / 3;
+            background-color: blue;
+            color: white;
+        }
+        .bot{
+            background-color: blue;
+        }
+        .botE{
+            grid-column: 4 / 6;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="myGrid">
+        <div class="top">15 Rodada</div>
+
+        <div>Goiás</div>
+        <div>0</div>
+        <div class="x">X</div>
+        <div>1</div>
+        <div>Inter</div>
+
+        <div>Palmeiras</div>
+        <div>1</div>
+        <div class="x">X</div>
+        <div>0</div>
+        <div>São Paulo</div>
+
+        <div>Cruzeiro</div>
+        <div>3</div>
+        <div class="x">X</div>
+        <div>0</div>
+        <div>Santos</div>
+
+        <div>Botafogo</div>
+        <div>2</div>
+        <div class="x">X</div>
+        <div>0</div>
+        <div>Fluminense</div>
+
+        <div class="botS">Série A</div>
+        <div class="bot"></div>
+        <div class="botE">2014</div>
+
+    </div>
+</body>
+</html>

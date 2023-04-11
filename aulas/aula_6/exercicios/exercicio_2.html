@@ -5,18 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exercicio_2.css">
-    <title>Form</title>
+    <title>Exercício 2</title>
 </head>
 <body>
     <div class="content">
         <form action="">
 
-                <label>Name</label> <input type="text" name="Name">
-                <label>CPF</label> <input type="text" name="CPF">
+                <label>Nome</label> 
+                <input 
+                    type="text" 
+                    name="Nome" 
+                    placeholder="Nome" 
+                    minlength="3"
+                    required
+                >
 
-                <label>ID</label> <input type="text" name="ID">
-                <label>Father's name</label> <input type="text" name="FN">
-                <input class="submit" type="submit">
+                <label>Email</label> 
+                <input 
+                    type="text" 
+                    name="Email" 
+                    placeholder="user@example.org" 
+                    required
+                >
+                
+                <label>Password</label> 
+                <input 
+                    type="password" 
+                    name="Password" 
+                    placeholder="6 caracteres" 
+                    minlength="6"
+                    maxlength="10"
+                    required
+                >
+                <label>Experiência</label> <div>
+                    <label>
+                        <input type="checkbox" name="Experiência" value="1">
+                        JavaScript
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Experiência" value="2">
+                        HTML
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Experiência" value="3">
+                        CSS
+                    </label>
+                </div>
+                <label>Curso</label> <select name="Curso">
+                    <option selected value="TADS">Análise e Desenvolvimento</option>
+                    <option value="FISI">Física</option>
+                    <option value="MAT">Matemática</option>
+                </select>
+                <label>Turno</label> <div>
+                    <label>
+                        <input type="radio" name="Turno" value="1">
+                        Tarde
+                    </label>
+                    <label>
+                        <input type="radio" name="Turno" value="2">
+                        Noite
+                    </label>
+                </div>
+                <label>Motivo Matrícula</label> <textarea name="MotivoMatricula" rows="5"></textarea>
+                <label></label> <input class="submit" type="submit">
 
         </form>
     </div>

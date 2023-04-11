@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <style>
+        body{display: flex;}
+        .myGrid{
+            display: grid;
+            grid-template-columns: 100px 100px;
+            border: 1px solid black;
+        }
+        .top{
+            background-color: #6E6E6E;
+        }
+        .carros{
+            background-color: #CCFFFF;
+        }
+        .autonomia{
+            background-color: #98FF98;
+        }
+        .top, .carros, .autonomia {
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="myGrid">
+        <div class="top">Modelo</div>
+        <div class="top">Consumo</div>
+        <div class="carros">Clio</div>
+        <div class="autonomia">15,8km/l</div>
+        <div class="carros">Palio</div>
+        <div class="autonomia">15,4km/l</div>
+        <div class="carros">Uno</div>
+        <div class="autonomia">15,2km/l</div>
+        <div class="carros">Up</div>
+        <div class="autonomia">14,3km/l</div>
+    </div>
+</body>
+</html>

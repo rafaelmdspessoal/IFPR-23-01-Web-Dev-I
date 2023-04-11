@@ -1,0 +1,39 @@
+h2 {
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+form { 
+    display: grid;
+    grid-template-columns: max-content max-content;
+    border: 2px solid #03200f;
+    background-color: #02210f41;
+    padding: 20px;
+    gap: 10px;
+}
+main{
+    display: flex;
+}
+label{
+    color: #00ff6a;
+}
+/* adicionar um borda 
+vermelha numa input 
+invalid que obrigatoria */
+input:focus:invalid {
+  border: 2px solid red;
+}
+input:required:valid{
+  border: 2px solid green;
+}
+input:focus{
+  outline: none;
+}
+label {
+  justify-self: right;
+}
+button {
+  grid-column: 2/3;
+  justify-self: left;
+}

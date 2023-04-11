@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exercicio_3.css"/>
+    <title>Exercício 3</title>
+</head>
+<body>
+    <main>        
+        <form>
+            <label></label>
+            <h2>Cadastro usuário</h2>
+            <label>Nome</label>
+            <input 
+                type="text" 
+                name="nome" 
+                placeholder="Nome"
+                minlength="6"
+                maxlength="8"
+                required
+            >
+
+            <label>Email</label>
+            <input 
+                type="email"
+                placeholder="test@test.org" 
+                name="email"
+            >
+
+            <label>Nascimento</label>
+            <input type="date" name="dataNasc">
+
+            <label>Pais</label> <select name="Pais">
+                <option selected value="BR">Brasil</option>
+                <option value="PI">Paraguai</option>
+                <option value="OT">Outro</option>
+            </select>
+
+            <label>Idade</label>
+            <div>
+                <input type="number" name="idade">
+                <label>DDD</label> <input type="number" name="DDD">
+                <label>Telefone</label> <input type="number" name="telefone">
+            </div>
+
+            <button>Adicionar</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

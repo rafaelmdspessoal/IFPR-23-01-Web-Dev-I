@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid area</title>
+  <style>
+    body { margin: 0; padding: 0; }
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+      "HEADER HEADER" 
+      "MENU MENU" 
+      "MENU-LATERAL MAIN" 
+      "FOOTER FOOTER";
+    }
+    .menu {
+      color: rgb(41, 41, 176);
+      grid-area: MENU;
+    }
+    .menu-lateral {
+      grid-area: MENU-LATERAL;
+      background-color: #87cefa;
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      gap: 5px;
+      padding: 10px;
+    }
+    .menu-lateral button:hover{
+      color: rgb(41, 41, 176);
+      background-color: green;
+    }
+    .menu-lateral button{
+      color: rgb(41, 41, 176);
+      height: 25px;
+    }
+    header {
+      color: rgb(41, 41, 176);
+      background-color: #87cefa;
+      grid-area: HEADER;
+      text-align: center;
+    }
+    main {
+      grid-area: MAIN;
+    }
+    footer {
+      background-color: #969696;
+      grid-area: FOOTER;
+      text-align: center;
+    }
+    header, main, footer { padding: 1rem; }
+    h2 {
+      color: rgb(41, 41, 176);
+      border-bottom:1px solid rgb(41, 41, 176);
+      padding-bottom:3px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <header>
+    <h1>Desenvolvimento de sistemas</h1>
+    <div class="menu">
+      <a href="">google</a> |
+      <a href="">ifpr</a> |
+      <a href="">uol</a>
+    </div>
+  </header>
+  <div class="menu-lateral">
+    <button>produtos</button>
+    <button>clientes</button>
+    <button>help-desk</button>
+    <button>informações</button>
+  </div>
+  <main>
+      <h2>Introdução</h2> 
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maiores voluptatibus ut, voluptates magnam veritatis tempora nihil quaerat accusantium eos suscipit fugit debitis atque sapiente incidunt deserunt iste velit facere?</p>
+
+      <h2>Desenvolvimento</h2> 
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maiores voluptatibus ut, voluptates magnam veritatis tempora nihil quaerat accusantium eos suscipit fugit debitis atque sapiente incidunt deserunt iste velit facere?</p>
+  </main>
+  <footer>
+    Site desenvolvido por tectronica S.A.
+  </footer>
+</div>
+
+</body>
+</html>

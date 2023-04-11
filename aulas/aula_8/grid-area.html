@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid area</title>
+  <style>
+    body { margin: 0; padding: 0; }
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+      "HEADER HEADER" 
+      "MENU MENU" 
+      "MENU-LATERAL MAIN" 
+      "FOOTER FOOTER";
+    }
+    .menu {
+      grid-area: MENU;
+    }
+    .menu-lateral {
+      grid-area: MENU-LATERAL;
+    }
+    header {
+      background-color: #87cefa;
+      grid-area: HEADER;
+      text-align: center;
+    }
+    main {
+      background-color: #90ee90;
+      grid-area: MAIN;
+    }
+    footer {
+      background-color: #f9adb8;
+      grid-area: FOOTER;
+      text-align: center;
+    }
+    header, main, footer { padding: 1rem; }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <header>
+    <h1>HEADER</h1>
+    <div class="menu">menu</div>
+  </header>
+  <div class="menu-lateral">
+    menu lateral
+  </div>
+  <main>
+    <h2>Conteúdo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maiores voluptatibus ut, voluptates magnam veritatis tempora nihil quaerat accusantium eos suscipit fugit debitis atque sapiente incidunt deserunt iste velit facere?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maiores voluptatibus ut, voluptates magnam veritatis tempora nihil quaerat accusantium eos suscipit fugit debitis atque sapiente incidunt deserunt iste velit facere?</p>
+  </main>
+  <footer>
+    <h3>FOOTER</h3>
+  </footer>
+</div>
+
+</body>
+</html>
