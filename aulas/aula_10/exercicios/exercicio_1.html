@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Exercicio 1s</title>
+    </head>
+    <body>
+        <p>
+            Questão 1: Alterar a cor dos parágrafos para xxx quando
+            o usuário clicar no botão alterar.
+        </p>
+        <p>Será que funcionou?</p>
+        <pre>
+            Resumo de JS:
+            <ul>
+                <item>identificar quem ou quais os alvos (tags)</item>
+                <item>qual evento que dispara a ação</item>
+                <item>implementar a função que realiza essa ação</item>
+            </ul>
+        </pre>
+        <button onclick="alteraCor()">Alterar cor</button>
+
+        <script>
+            function getRandomColor(){
+                return '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+            }
+            function alteraCor(){
+                /*
+                // obtém uma referencias aos paragrafos
+                let paragrafo = document.querySelector("body > p");
+                // altera a cor
+                paragrafo.style.color = getRandomColor();
+                */
+                // obtém referencia de todos os paragrafos
+                let paragrafos = document.querySelectorAll("body > p");
+                for (let index = 0; index < paragrafos.length; index++) {
+                    paragrafos[index].style.color = getRandomColor();
+                }
+            }
+        </script>
+    </body>
+</html>
