@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <!--
+            - Document Object Model (DOM)
+            - Def: Modeo da pagina html que o JS utiliza
+        -->
+        <h1 id="top" class="titulo">Título</h1>
+        <div>
+            <a href="">Sita A</a>
+        </div>
+        <a href="">Site B</a>
+        <input type="text"/>
+    </body>
+
+    <script>
+        // Acessa DOM atraves do caminho body e salva a tag h1
+        let h1 = document.querySelector("body > h1");
+        let otherH1 = document.querySelector("body > h1.titulo");
+    </script>
+</html>
